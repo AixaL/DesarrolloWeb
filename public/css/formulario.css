@@ -1,0 +1,89 @@
+body{
+/*	background-image: url("../img/studio.jpeg");*/
+	background-color: white;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body, html{
+	height: 100%;
+}
+
+#todo{
+	background-color: #fffae0;
+	width: 50%;
+	height: 120%;
+	margin: 3% 4%;
+	border: 2px solid #3d2842;
+	border-radius: 10px;
+	word-break: break-all;
+}
+
+#centro u, h3{
+	text-align: center;
+	color: brown;
+	text-shadow: 0px 0px 9px orange;
+	font-size: 32px;
+}
+
+#centro{
+color:black;
+font-family: Malgun Gothic;
+background-color: white;
+width: 70%;
+margin: 5% 15%;
+padding-top: 10px;
+padding-bottom: 120px;
+padding-left: 30px;
+padding-right: 38px;
+border:2px solid #444455;
+border-radius: 10px;
+box-sizing: border-box;
+word-break: break-all;
+}
+
+#centro p{
+	padding-top: 6%;
+	color: black;
+	font-size: 14px;
+}
+
+
+#nombre, #especie, #status, #cuidador, #dueno, #caract, #edad{
+	width:100%;
+	height: 20px;
+	background-color: #ffeaea;
+}
+
+
+.form_n{
+	color: darkblue;
+	font-family: Calibri;
+	font-size: 14px;
+}
+
+
+
+#registrar{
+	background-color: #9981d4;
+	height: 30px;
+	font-family: Calibri;
+	font-size: 18px;
+	color:white;
+	margin-top: 5%;
+	margin-left: 65%;
+	padding: 0 3%;
+	cursor: pointer;
+}
+#registrar:hover{
+	transition-duration: 0.2s;
+	color: orange;
+	border:1px solid gray;
+	background-color: #4e416e;
+}
+
+
+
+
