@@ -22,7 +22,7 @@ app.use(cors);
 // app.use(app.router);
 // routes.initialize(app);
 
-// app.use('/mascotas',mascotas);
+app.use('/mascotas',mascotas);
 
 // app.use('/usuarios',usuarios);
 app.use('/perros',perros);

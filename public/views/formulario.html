@@ -5,13 +5,15 @@
 		Registro
 	</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/formulario.css">
+	<link rel="stylesheet" type="text/css" href="../css/formulario.css">
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script defer src="../js/funciones.js"></script>
 </head>
 
 <body>
 <header id="todo">
 
-<form method="post" action="formulario.php">
+<!-- <form> -->
 	<header id="centro">
 		<h3>Registro perro uwu</h3> 
 		<P>Introduce en los siguientes campos la información del perro. </P>
@@ -40,9 +42,9 @@
 		<font class="form_n">Edad:</font> 
 		<input id="edad" type="text" name="edad"> 
 
-		<input id="registrar" type="submit" value="Registrar" name="registrar"><br>
+		<input id="registrar" type="submit" value="Registrar" name="registrar" onclick="registrar()"><br>
 	</header>
-</form>
+<!-- </form> -->
 
 </header>
 </body>
