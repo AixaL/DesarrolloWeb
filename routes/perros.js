@@ -11,6 +11,7 @@ router.get('/', function (request, res) {
     res.sendFile(__dirname + '/index.html');
 });
 
+// http: //localhost:3001/perros/ver
 router.get("/ver", (req, res, next) => {
     const db = mysql.createConnection(dbconn);
     const query = "SELECT * FROM mascotas;";

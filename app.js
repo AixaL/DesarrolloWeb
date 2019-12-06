@@ -37,7 +37,8 @@ app.use(express.static('public'));
 
 app.use(express.static(publicPath), router);
 
-app.get('/', function (request, res) {
+// http: //localhost:3001/
+app.get('/mascotas', function (request, res) {
     res.sendFile(__dirname + '/index.html');
 });
 
