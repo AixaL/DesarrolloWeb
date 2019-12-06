@@ -3,6 +3,7 @@ let conn = {
     user: "root",
     password: "",
     database: "mascotas_db"
+    
 }
 
 module.exports = conn;
