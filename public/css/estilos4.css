@@ -159,65 +159,6 @@ aside img {
 }
 .imga img:hover {filter: blur(2px);}
 
-.imgb img{
-	border:2px solid brown;
-	border-radius: 5px;
-	position: relative;
-	margin-top: 5%;
-	margin-left: 5%;
-	height:28%;
-	width: 28%;
-	float:left;
-}
-.imgb img:hover {filter: blur(2px);}
-
-.imgc img{
-	border:2px solid brown;
-	border-radius: 5px;
-	position: relative;
-	margin-top: 5%;
-	margin-left: 5%;
-	height:28%;
-	width: 28%;
-	float:left;
-}
-.imgc img:hover {filter: blur(2px);}
-
-.imgd img{
-	border:2px solid brown;
-	border-radius: 5px;
-	position: relative;
-	margin-top: 5%;
-	margin-left: 2%;
-	height:28%;
-	width: 28%;
-	float: left;
-}
-.imgd img:hover {filter: blur(2px);}
-
-.imge img{
-	border:2px solid brown;
-	border-radius: 5px;
-	position: relative;
-	margin-top: 5%;
-	margin-left: 5%;
-	height:28%;
-	width: 28%;
-	float: left;	
-}
-.imge img:hover {filter: blur(2px);}
-
-.imgf img{
-	border:2px solid brown;
-	border-radius: 5px;
-	position: relative;
-	margin-top: 5%;
-	margin-left: 5%;
-	height:28%;
-	width: 28%;
-	float: left;	
-}
-.imgf img:hover {filter: blur(2px);}
 
 .columna{
 	text-align: justify;
@@ -233,14 +174,24 @@ aside img {
 		  box-shadow:
  5px 5px 5px #aaaaaa;
 }
-.columna .name{
+.columna #nombre{
+	font-size: 24px;
+	font-weight: bold;
+	font-family: Malgun Gothic;
 color:black;
 }
-.columna .sub{
+.columna #status{
+font-family: Calibri;
 color:#aaaaaa;
 }
-.columna .desc{
+.columna #caracteristicas{
+	font-family: Calibri;
 color:#777777;
+font-weight: lighter;
+}
+
+.columna .desc{
+	color:#777777;
 font-weight: lighter;
 }
 #concepto{
@@ -251,7 +202,7 @@ font-weight: lighter;
 	font-size: 16px;
 	float: left;
 }
-#contenido{
+#sexo, #especie, #cuidador, #dueño, #edad{
 margin-top: 2%;
 margin-left: 1%;
 float: left;
