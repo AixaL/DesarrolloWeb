@@ -1,50 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>
-		Registro
-	</title>
+	<title>Registrarse</title>
 	<meta charset="utf-8">
+	<script type="text/javascript" src="../js/formulario.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/formulario.css">
-	<script src="../js/jquery-3.3.1.min.js"></script>
-	<script defer src="../js/funciones.js"></script>
+	<link rel="shortcut icon" href="../img/huella.png">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Quicksand:300,400,700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-<header id="todo">
-
-<!-- <form> -->
+<div id="main-container">
+<form method="post" action="formulario.php">
 	<header id="centro">
-		<h3>Registro perro uwu</h3> 
-		<P>Introduce en los siguientes campos la información del perro. </P>
-		<br>
-		<font class="form_n">Nombre:</font> 
-		<input id="nombre" type="text" name="nombre">
-		<br><br>
-		<font class="form_n">Especie:</font> 
-		<input id="especie" type="text" name="especie">
-		<br><br>
-		<font class="form_n">Status:</font> 
-		<input id="status" type="text" name="status"> 
-		<br><br>
-		<font class="form_n">Cuidador:</font> 
-		<input id="cuidador" type="text" name="cuidador"> 
-		<br><br>
-		<font class="form_n">Dueño:</font> 
-		<input id="dueno" type="text" name="dueno"> 
-		<br><br>
-		<input id="macho" type="radio" name="sexo"><label for="macho">Macho</label>
-		<input id="hembra" type="radio" name="sexo"><label for="hembra">Hembra</label>
-		<br><br>
-		<font class="form_n">Características:</font> 
-		<input id="caract" type="text" name="caract"> 
-		<br><br>
-		<font class="form_n">Edad:</font> 
-		<input id="edad" type="text" name="edad"> 
-
-		<input id="registrar" type="submit" value="Registrar" name="registrar" onclick="registrar()"><br>
-	</header>
-<!-- </form> -->
+		<input id="user" type="text" placeholder="Usuario:">
+		<input id="correo" type="text" placeholder="E-mail:">
+		<input id="psswd" type="text" placeholder="Contraseña:">
+		<input id="nombre" type="text" placeholder="Nombre del perro:">
+		<input id="macho" type="radio" name="sexo"><label id="macho-txt" for="macho">Macho</label>
+		<input id="hembra" type="radio" name="sexo"><label id="hembra-txt" for="hembra">Hembra</label>
+		<input id="edad" type="text" placeholder="Edad del perro:">
+		<input id="raza" type="text" placeholder="Raza:">
+		<input id="comentario" type="text" onclick="registrar()" placeholder="Añadir comentario:">
+		<input id="registrar" type="submit" value="Regístrate" class="registrar">
+	</div>
+	<div id="header">
+		<img src="../img/huella.png" alt="menu-icon2" style="left: 1275px;">
+		<h1 style="font-family: 'Quicksand'">Regístrate</h1>
+		<input type="checkbox" id="chec">
+		<label for="chec">
+			<img src="../img/menu.png">
+		</label>
+		<nav>
+			<ul>
+				<li> <a href="#">Home</a> </li>
+				<li> <a href="#">Log In</a> </li>
+				<li> <a href="#">Foro</a> </li>
+			</ul>
+		</nav>
+	</div>
+</form>
 
 </header>
 </body>
