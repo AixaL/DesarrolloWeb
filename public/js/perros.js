@@ -5,3 +5,7 @@ function sendComment(){
   containerForo.innerHTML += "<div id='foro'>" + "<p id='comm'>" + "User: &nbsp " + comment + "</p>" + "</div>";
 }
 
+function adoptar(){
+	estado = document.getElementById('adoptar').value;
+}
+
