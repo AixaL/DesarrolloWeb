@@ -4,22 +4,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <!-- <script src="public/js/jquery-3.3.1.min.js"></script> -->
+    <link href="https://fonts.googleapis.com/css?family=Anton|Fjalla+One|Josefin+Sans|Noto+Sans+TC|Varela+Round&display=swap" rel="stylesheet">
     <script src="js/jquery-3.3.1.min.js"></script>
+    <title>Document</title>
 </head>
 <body>
-    <a href="views/formulario.html">jjj</a>
-    <script>
-        $.ajax({
-            method:'GET',
-            url: 'http://localhost:3001/perros/ver',
-            data:{
-
-            }
-        }).done(function(res){
-            console.log(res)
-        })
-    </script>
+    <nav>
+        <div class="logo">
+            <div class="img">
+                <img src="Img/dog.svg" alt="">
+            </div>
+        </div>
+        <div class="opciones">
+            <div class="op">Inicio</div>
+            <div class="op">Perros</div>
+            <div class="op">Gatos</div>
+            <div class="op">Foro</div>
+        </div>
+        <div class="sesion">
+            <button id="iniciarS">Iniciar Sesión</button>
+            <h6>Nombre</h6>
+            <div class="imagen">
+                <img src="" alt="">
+            </div>
+        </div>
+    </nav>
+    <div class="esp inicio">
+        <div class="textoI">
+            <h1>Ellos necesitan un hogar</h1>
+            <h3>Ve las mascotas que necesitan un hogar, habla con el cuidador y adopta a un nuevo amigo</h3>
+        </div>
+        <div class="imagen">
+            <img src="Img/dog1.png" alt="">
+        </div>
+        <div class="mas">
+            <p>Ver más</p>
+            <div class="iconoP">
+                <img src="Img/down.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="esp"></div>
+    
 </body>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        width: 100%;
+        height: 100%;
+        font-family: 'Noto Sans TC', sans-serif;
+        background: #443F46;
+    }
+    nav{
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        background: #443F46;
+        /* background: fuchsia; */
+        color: white;
+        padding-left: 10px;
+        padding-top: 10px;
+        box-sizing: border-box;
+        z-index: 99999;
+    }
+    .esp{
+        width: 100%;
+        height: 100vh;
+        background: white;
+        position: relative;
+        float: left;
+    }
+    .inicio{
+        background: #443F46;
+    }
+    .opciones{
+        width:50% ;
+        height: 100%;
+        /* background: burlywood; */
+        position: relative;
+        float: left;
+        padding-left: 6%;
+        padding-right: 10%;
+        box-sizing: border-box;
+    }
+    .op{
+        width: calc(100%/4);
+        height: 100%;
+        position: relative;
+        float: left;
+        padding-top: 3%;
+        box-sizing: border-box;
+    }
+    .logo{
+        width: 30% ;
+        height: 100%;
+        /* background: cadetblue; */
+        position: relative;
+        float: left;
+    }
+    .img{
+        width: 60px;
+        height: 90%;
+        margin-top: 5px;
+        margin-left:30px;
+    }
+    .img img{
+        width: 100%;
+        height: 100%;
+        filter: invert(100);
+    }
+    .imagen{
+        width: 40%;
+        height: 80%;
+        position: relative;
+        float: right;
+        margin-top: 10%;
+    }
+    .imagen img{
+        width: 100%;
+        height: 100%;
+    }
+    .textoI{
+        width: 50%;
+        height: 60%;
+        position: relative;
+        float: left;
+        color: white;
+        margin-top: 18%;
+        margin-left: 10%;
+        padding: 20px;
+        /* line-height: 30px; */
+        box-sizing: border-box;
+    }
+    .iconoP{
+        width: 60px;
+        /* background: burlywood; */
+        height: 40px;
+        margin-left: 19px;
+    }
+    .iconoP img{
+        width: 100%;
+        height: 80%;
+        filter: invert(100);
+    }
+    .mas{
+        font-size: .8em;
+        margin-top: 10px;
+        width: 100px;
+        height: 60px;
+        z-index: 999;
+        /* background: cadetblue; */
+        position: absolute;
+        top: 88%;
+        left: 47%;
+        color: white;
+        text-align: center;
+    }
+
+    /* font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Varela Round', sans-serif; */
+</style>
 </html>

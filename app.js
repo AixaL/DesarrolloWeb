@@ -9,8 +9,8 @@ const router = express.Router();
 
 const mascotas = require('./routes/mascotas');
 const usuarios = require('./routes/usuarios');
-const perros = require('./routes/perros');
-const gatos = require('./routes/gatos');
+// const perros = require('./routes/perros');
+// const gatos = require('./routes/gatos');
 const comentarios = require('./routes/comentarios');
 const foro = require('./routes/foro');
 
@@ -25,8 +25,6 @@ app.use(cors);
 app.use('/mascotas',mascotas);
 
 app.use('/usuarios',usuarios);
-app.use('/perros',perros);
-// app.use('/gatos',gatos);
 // app.use('/comentarios',comentarios);
 // app.use('/foro',foro);
 
