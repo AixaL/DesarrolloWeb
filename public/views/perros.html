@@ -3,12 +3,10 @@
 <head>
 	<title>Adopta</title>
 	<meta charset="utf-8">
-
-<link rel = "stylesheet" type = "text/css" href = "../css/estilos4.css"/> 
-<script src="../js/jquery-3.3.1.min.js"></script>
-
-<script src="../js/functions.js>"></script>
-
+<script type="text/javascript" src="../js/perros.js"></script>
+<link rel = "stylesheet" type = "text/css" href = "../css/perros.css"/> 
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Quicksand:300,400,700&display=swap" rel="stylesheet">
 </head>
 <body> 
 
@@ -72,12 +70,15 @@
 	
 </aside>
 
-<div id="eventos">
-		<b><font face="Calibri" size= "5">Comentarios del usuario</font><br></b>
-<!-- 		<div class="imga">
-			<a href ="https://www.facebook.com/NoisyBarQro/"><img src="img/noisy.jpg"></a>
-		</div> -->
-
+<div id="eventos"><font size=4>Escribe un comentario</font>
+	<div id="main-container">
+			<div id="container-comments">
+				<div id="foro">
+				</div>
+			</div>
+			<input type="text" id="comments" placeholder="Añada un comentario"><br>
+			<button id="btn" onclick="sendComment()">Enviar</button>
+	</div>
 </div>
 
 
