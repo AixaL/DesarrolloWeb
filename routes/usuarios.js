@@ -26,13 +26,13 @@ router.post("/login", (req,res,next)=>{
             const token = jwt.sign({userId:idUs,user:us}, process.env.JWT_KEY  || 'debugkey')
 
             res.status(200);
-            res.json({code: 1, message: "Hola", token});
+            res.json({code: 1, message: "Hola", token,data:result});
             // res.status(200);
             // res.json({code: 1, message: {userId: idUs}})
         } else {
             // restringido
             res.status(401);
-            res.json({code: 1, message: "Error en los datos"});
+            res.json({code: 1, message: "Error en los datos",});
         }
         // Nota: No se pueden mandar dos respuestas.
         db.end((err) => {console.log("closed")});

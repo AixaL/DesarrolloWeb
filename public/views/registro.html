@@ -3,6 +3,7 @@
 <head>
 	<title>Registrarse</title>
 	<meta charset="utf-8">
+	<script src="../js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="../js/registro.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/registro.css">
 	<link rel="shortcut icon" href="../img/huella.png">
@@ -10,16 +11,17 @@
 </head>
 <body>
 <div id="main-container">
-<form method="post" action="registro.php">
 	<header id="centro">
-		<input id="nombre" type="text" placeholder="Nombre de Usuario:">
-    <input id="psswd" type="text" placeholder="Contraseña:">
-    <input id="correo" type="text" placeholder="Correo:">
-		<input id="macho" type="radio" name="sexo"><label id="macho-txt" for="macho">Hombre</label>
-		<input id="hembra" type="radio" name="sexo"><label id="hembra-txt" for="hembra">Mujer</label>
-		<input id="dir" type="text" placeholder="Dirección:">
-    <input id="num" type="text" placeholder="Número de teléfono:">
-		<input id="registrar" type="submit" value="Registrar" class="registrar" onclick="registrar()">
+	<input id="nombre" type="text" placeholder="Nombre:" required>
+	<input id="apellido" type="text" placeholder="Apellido:" required>
+	<input id="fecha" type="date" placeholder="Fecha de nacimiento" required>
+    <input id="correo" type="email" placeholder="Correo:" required>
+	<input id="estado" type="text" placeholder="Estado:" required>
+	<input id="ciudad" type="text" placeholder="Ciudad:" required>
+	<input id="dir" type="text" placeholder="Dirección:" required>
+	<input id="psswd" type="password" placeholder="Contraseña:" required>
+	<input id="psswdC" type="password" placeholder="Confirmación de Contraseña:" required>
+	<input id="registrar" type="submit" value="Registrar" class="registrar" onclick="registrar()">
 	</div>
 	<div id="header">
 		<img src="../img/huella.png" alt="menu-icon2" style="left: 1275px;">
@@ -37,8 +39,6 @@
 			</ul>
 		</nav>
 	</div>
-</form>
-
 </header>
 </body>
 </html>
