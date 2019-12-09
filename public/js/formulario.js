@@ -1,7 +1,4 @@
 function registrar() {
-  user = document.getElementById('user').value;
-  correo = document.getElementById('correo').value;
-  psswd = document.getElementById('psswd').value;
   nombre = document.getElementById('nombre').value;
   macho = document.getElementById('macho').value;
   hembra = document.getElementById('hembra').value;

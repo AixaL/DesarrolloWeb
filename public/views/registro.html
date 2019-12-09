@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registrarse</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../js/registro.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/registro.css">
+	<link rel="shortcut icon" href="../img/huella.png">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Quicksand:300,400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="main-container">
+<form method="post" action="registro.php">
+	<header id="centro">
+		<input id="nombre" type="text" placeholder="Nombre de Usuario:">
+    <input id="psswd" type="text" placeholder="Contraseña:">
+    <input id="correo" type="text" placeholder="Correo:">
+		<input id="macho" type="radio" name="sexo"><label id="macho-txt" for="macho">Hombre</label>
+		<input id="hembra" type="radio" name="sexo"><label id="hembra-txt" for="hembra">Mujer</label>
+		<input id="dir" type="text" placeholder="Dirección:">
+    <input id="num" type="text" placeholder="Número de teléfono:">
+		<input id="registrar" type="submit" value="Registrar" class="registrar" onclick="registrar()">
+	</div>
+	<div id="header">
+		<img src="../img/huella.png" alt="menu-icon2" style="left: 1275px;">
+		<h1 style="font-family: 'Quicksand'">Regístrate</h1>
+		<input type="checkbox" id="chec">
+		<label for="chec">
+			<img src="../img/menu.png">
+		</label>
+		<nav>
+			<ul>
+				<li> <a href="#">Inicio</a> </li>
+				<li> <a href="#">Iniciar Sesión</a> </li>
+				<li> <a href="#">Registrar Mascota</a> </li>
+				<li> <a href="#">Foro</a> </li>
+			</ul>
+		</nav>
+	</div>
+</form>
+
+</header>
+</body>
+</html>

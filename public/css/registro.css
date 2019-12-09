@@ -54,7 +54,7 @@ h1 {
 
 }
 #main-container {
-  background-image: url(../img/imagen.jpg);
+  background-image: url(../img/2.jpg);
   background-size: 100%;
   padding-bottom: 540px;
   height: 1000px;
@@ -63,7 +63,7 @@ h1 {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  padding-top: 500px;
+  padding-bottom: 200px;
   padding-left: 200px;
   box-shadow: 0px 0px 200px 0px rgba(0,0,0,0.2);
 }
@@ -73,7 +73,7 @@ h1 {
   font-family: 'Quicksand';
   background:rgba(0, 0, 0, 0.60);
   width: 340px;
-  height: 360px;
+  height: 390px;
   padding-top: 40px;
   padding-bottom: 30px;
   padding-left: 30px;
@@ -82,22 +82,17 @@ h1 {
   box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.7);
   box-sizing: border-box;
   position: fixed;
-  top: 1055px;
+  top: 635px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-#nombre, #raza {
+#nombre, #psswd, #dir, #num {
   margin-bottom: 20px;
   width: 100%;
 }
-#edad {
+#correo {
   margin-top: 40px;
   margin-bottom: 20px;
-  width: 100%;
-}
-#comentario {
-  margin-bottom: 20px;
-  height: 30px;
   width: 100%;
 }
 #macho {
@@ -136,7 +131,7 @@ h1 {
 	font-size: 13px;
 	color:black;
   position: fixed;
-  top: 314px;
+  top: 346px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -144,6 +139,6 @@ h1 {
   background:rgba(255, 196, 0, 0.8);
   border-radius: 3px;
   border-style: none;
-  width: 104px;
+  width: 96px;
   height:28px;
 }
