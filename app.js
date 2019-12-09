@@ -26,7 +26,7 @@ app.use('/mascotas',mascotas);
 
 app.use('/usuarios',usuarios);
 // app.use('/comentarios',comentarios);
-// app.use('/foro',foro);
+app.use('/foro',foro);
 
 app.use('/public/css', express.static(__dirname + '/css'));
 app.use('/public/js', express.static(__dirname + '/js'));
@@ -41,19 +41,22 @@ app.get('/adopta', function (request, res) {
     res.sendFile(__dirname + '/index.html');
 });
 app.get('/adopta/registro', function (request, res) {
-    res.sendFile(__dirname + '/public/views/formulario.html');
+    res.sendFile(__dirname + '/public/views/registro.html');
 });
 app.get('/adopta/login', function (request, res) {
-    res.sendFile(__dirname + '/public/views/formulario.html');
+    res.sendFile(__dirname + '/public/views/login.html');
 });
 app.get('/adopta/perros', function (request, res) {
-    res.sendFile(__dirname + '/public/views/formulario.html');
+    res.sendFile(__dirname + '/public/views/perros.html');
 });
 app.get('/adopta/gatos', function (request, res) {
     res.sendFile(__dirname + '/public/views/formulario.html');
 });
-app.get('/adopta/foro', function (request, res) {
+app.get('/adopta/registraMascota', function (request, res) {
     res.sendFile(__dirname + '/public/views/formulario.html');
+});
+app.get('/adopta/foro', function (request, res) {
+    res.sendFile(__dirname + '/public/views/foro.html');
 });
 app.get('/adopta/mascota', function (request, res) {
     res.sendFile(__dirname + '/public/views/formulario.html');

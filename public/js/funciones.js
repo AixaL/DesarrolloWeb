@@ -1,36 +1,20 @@
+if(sessionStorage.getItem('correo')==null){
+    document.getElementById('iniciarS').style.display = 'block'
+    document.getElementById('cerrarS').style.display = 'none'
+    document.getElementById('cor').style.display='none'
+}else{
+    document.getElementById('iniciarS').style.display = 'none'
+    document.getElementById('cerrarS').style.display = 'block'
+    document.getElementById('cor').innerHTML = sessionStorage.getItem('correo')
+}
 
-
-function registrar(){
-    var nombre=document.getElementById('nombre').value;
-    var especie = document.getElementById('especie').value;
-    var status = document.getElementById('status').value;
-    var cuidador = document.getElementById('cuidador').value;
-    var dueno = document.getElementById('dueno').value;
-    var caract = document.getElementById('caract').value;
-    var edad = document.getElementById('edad').value;
-
-    if(nombre==""){
-        alert("vacio")
+function verificar(){
+    if (sessionStorage.getItem('correo') == null) {
+        alert("Inicia sesion para poder ver más")
+    } else {
+        document.getElementById('idP').setAttribute('href', '/adopta/perros')
+        document.getElementById('idG').setAttribute('href', '/adopta/gatos')
+        document.getElementById('idF').setAttribute('href', '/adopta/foro')
+       
     }
-
-
-    console.log(nombre,especie,status,cuidador,dueno,caract,edad)
-
-    $.ajax({
-            method:'POST',
-            url: 'http://localhost:3001/mascotas/agregar',
-            data:{
-                nombre:nombre,
-                especie:especie,
-                status:status,
-                cuidador:cuidador,
-                dueno:dueno,
-                caracteristicas:caract,
-                edad:edad,
-            },
-            dataType:'json'
-        }).done(function(res){
-            console.log(res)
-        })
-
 }

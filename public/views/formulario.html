@@ -10,6 +10,11 @@
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Quicksand:300,400,700&display=swap" rel="stylesheet">
 </head>
 <body>
+	<script>
+		if (sessionStorage.getItem('correo') == null) {
+			window.location = 'http://localhost:3001/adopta/login'
+		}
+	</script>
 <div id="main-container">
 <form method="post" action="formulario.php">
 	<header id="centro">
@@ -30,10 +35,12 @@
 		</label>
 		<nav>
 			<ul>
-				<li> <a href="#">Inicio</a> </li>
-				<li> <a href="#">Iniciar Sesión</a> </li>
-				<li> <a href="#">Registrarse</a> </li>
-				<li> <a href="#">Foro</a> </li>
+				<li><a href="#">Inicio</a> </li>
+				<li id="cor">Inicia sesión</li>
+				<li id="cerrarS"> <a href="/adopta/login">Cerrar Sesion</a> </li>
+				<li> <a href="/adopta/perros">Perros</a> </li>
+				<li> <a href="/adopta/gatos">Gatos</a> </li>
+				<li> <a href="/adopta/foro'"> Foro</a> </li>
 			</ul>
 		</nav>
 	</div>
