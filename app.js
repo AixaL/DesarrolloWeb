@@ -24,7 +24,7 @@ app.use(cors);
 
 app.use('/mascotas',mascotas);
 
-// app.use('/usuarios',usuarios);
+app.use('/usuarios',usuarios);
 app.use('/perros',perros);
 // app.use('/gatos',gatos);
 // app.use('/comentarios',comentarios);
@@ -33,14 +33,24 @@ app.use('/perros',perros);
 app.use('/public/css', express.static(__dirname + '/css'));
 app.use('/public/js', express.static(__dirname + '/js'));
 app.use('/public/img', express.static(__dirname + '/img'));
+app.use('/public/img', express.static(__dirname + '/views'));
 app.use(express.static('public'));
 
 app.use(express.static(publicPath), router);
 
 // http: //localhost:3001/
-app.get('/mascotas', function (request, res) {
+app.get('/adopta', function (request, res) {
     res.sendFile(__dirname + '/index.html');
 });
+app.get('/adopta/registro', function (request, res) {
+    res.sendFile(__dirname + '/public/views/formulario.html');
+});
+// app.get('/adopta7login', function (request, res) {
+//     res.sendFile(__dirname + '/index.html');
+// });
+// app.get('/adopta', function (request, res) {
+//     res.sendFile(__dirname + '/index.html');
+// });
 
 
 module.exports = app;
