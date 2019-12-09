@@ -43,12 +43,24 @@ app.get('/adopta', function (request, res) {
 app.get('/adopta/registro', function (request, res) {
     res.sendFile(__dirname + '/public/views/formulario.html');
 });
-// app.get('/adopta7login', function (request, res) {
-//     res.sendFile(__dirname + '/index.html');
-// });
-// app.get('/adopta', function (request, res) {
-//     res.sendFile(__dirname + '/index.html');
-// });
+app.get('/adopta/login', function (request, res) {
+    res.sendFile(__dirname + '/public/views/formulario.html');
+});
+app.get('/adopta/perros', function (request, res) {
+    res.sendFile(__dirname + '/public/views/formulario.html');
+});
+app.get('/adopta/gatos', function (request, res) {
+    res.sendFile(__dirname + '/public/views/formulario.html');
+});
+app.get('/adopta/foro', function (request, res) {
+    res.sendFile(__dirname + '/public/views/formulario.html');
+});
+app.get('/adopta/mascota', function (request, res) {
+    res.sendFile(__dirname + '/public/views/formulario.html');
+});
+app.get('/adopta/perfil', function (request, res) {
+    res.sendFile(__dirname + '/public/views/formulario.html');
+});
 
 
 module.exports = app;
